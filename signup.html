@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+<!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<style>
+    
+    body,input,button{
+        padding: 7px;
+        margin: 10px;
+    }
+    #sign-up{
+       height: 80%;
+       width: 400px;
+       margin-top: 70px;
+       background-color: rgb(96, 129, 63);
+       border-radius: 10px;
+       box-shadow: 2px 2px 5px gray;
+        align-items: center;
+         text-align: center;
+    }
+    #sign-up h1{
+        text-align: center;
+        color: rgb(58, 11, 11);
+        padding: 10px;
+    }
+    input{
+        border-radius: 5px;
+        padding: 5px;
+    }
+    a{
+        text-decoration: none;
+        color: green;
+        background-color: rgb(227, 230, 233);
+        padding: 3px;
+        border-radius: 5px;
+        border: 1px black solid;
+    }
+    #btn{
+        background-color: rgb(27, 13, 13);
+        
+        color: antiquewhite;
+    }
+</style>
+<body>
+    <div id="sign-up" class="container-fluid ">
+    <h1>Sign Up</h1>
+    <input type="text" name="name" placeholder="Name" ><br>
+    <input type="text" name="uname" placeholder="Username"><br>
+    <input type="email" name="mail" placeholder="mail id"><br>
+    <input type="password" name="pwd" placeholder="Password"><br>
+
+<span>If u r already signed up ? Just  </span>
+    <a href="signin.html">Sign In</a>
+    <br>
+
+    <input type="submit" id="btn" onclick="signup()">
+
+    </div>
+</body>
+
+<script>
+    function signup(){
+        let name=document.querySelector('input[name="name"]').value;
+        let uname=document.querySelector('input[name="uname"]').value;
+        let mail=document.querySelector('input[name="mail"]').value;
+        let pwd=document.querySelector('input[name="pwd"]').value;
+
+    if(name && uname && mail && pwd){
+        localStorage.setItem(mail, JSON.stringify({name,uname,mail,pwd}));
+        window.location.href="signin.html";
+    }
+    else{
+        alert("Hey Buddy ! Please fill in all fields")
+    }
+    }
+
+</script>
+</html>

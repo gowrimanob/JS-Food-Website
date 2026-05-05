@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Icon-Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  
+  <nav class="navbar navbar-expand-sm bg-white ">
+
+    <span id="welcome">Welcome,<span id="userName">Guest</span>! </span>
+
+    <div class="container-fluid">
+      <ul class="navbar-nav border-top " id="navid">
+        <li class="nav-item  mx-2 ">
+          <a class="nav-link" href="#">Home </a>
+        </li>
+        <li class="nav-item  mx-2">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Cheeses</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Meats</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Provisions</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Finds</a>
+        </li>
+
+
+      </ul>
+      <ul id="login">
+        <li class="nav-item">
+          <a class="nav-link" href="signup.html"><i class="fa-solid fa-circle-user"></i>Log in</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="homecarousel">
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://thumbs.dreamstime.com/b/comfortable-food-day-restaurant-dish-delivery-top-view-free-space-your-text-164636603.jpg"
+            alt="Los Angeles" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="https://t3.ftcdn.net/jpg/01/54/14/86/360_F_154148685_yvijeC6L2SFpvqFJ5H1lunPg40FzCAf1.jpg"
+            alt="Chicago" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://media.assettype.com/quintype-website%2F2022-11%2F63a278b6-5383-4bc6-87ac-bb8a5c881fc9%2Ftraditional_indian_soup_lentils_indian_dhal_spicy_curry_bowl_spices_herbs_rustic_black_wooden_table.jpg?rect=0%2C78%2C1500%2C844&w=1200&auto=format%2Ccompress&fit=max"
+            alt="New York" class="d-block" style="width:100% ">
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="overlay-box">
+      <div class="inner-box">
+        <div class="top-title">
+          <h1>GOOD <span>to</span> EAT</h1>
+        </div>
+
+        <div class="bottom-section">
+          <div class="left">
+            <p>Savouries and sweets for the gourmet in all of us</p>
+          </div>
+
+          <div class="middle">
+            <!-- <img src="pig.png" alt=""> -->
+          </div>
+
+          <div class="right">
+            <a href="#">START SHOPPING > </a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <p class="enjoy-text">Enjoy Our Special Recommendations</p>
+
+
+    <div class="flex-div">
+
+      <div class="card">
+
+        <div class="img-box" id="img-1"></div>
+
+        <div class="content-box"><span> FRENCH BIE CHEESE </span>
+          <H1>__</H1>
+          <span>$6.99</span><br>
+
+          <a href="cheese.html"><button>View Details</button></a>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="img-box" id="img-2"></div>
+
+        <div class="content-box"><span> SMOKED VIRGINIA BACON </span>
+          <H1>__</H1>
+          <span>$6.99</span><br>
+
+          <button>View Details</button>
+        </div>
+      </div>
+
+
+      <div class="card">
+
+        <div class="img-box" id="img-3"></div>
+
+        <div class="content-box"><span> GREEK KALAMATA OLIVES </span>
+          <H1>__</H1>
+          <span>$6.99</span><br>
+
+          <button>View Details</button>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <p class="text-last">© 2035 by GOOD TO EAT. Powered and secured by Wix</p>
+
+
+
+   
+</body>
+
+ <!-- for username fetching -->
+    <script>
+      const username = localStorage.getItem("currentUser");
+
+      if (username) {
+        document.getElementById("userName").textContent = username;
+      }
+    </script>
+
+
+</html>

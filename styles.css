@@ -1,0 +1,324 @@
+body{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+}
+a{
+    cursor: pointer;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+}
+#login{
+    text-decoration: none;
+    list-style: none;
+    display: flex; 
+}
+#welcome{
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: rgb(48, 90, 6);
+}
+#login li{
+    padding-right: 70px;
+    justify-content: end;
+}
+#navid{
+    margin-left: 50px;
+}
+#navid li{
+    padding-left: 20px;
+}
+/* Carousel-homepage */
+#homecarousel{
+    position: relative;
+   
+}
+
+#homecarousel img{
+    height: 600px;
+    margin-top: 100px;
+
+}
+#center-div{
+    position: absolute;
+    height: 300px;
+    width: 45%;
+
+    top: 35%;
+    left: 30%;
+    z-index: 2;
+    background-color: white;
+    border: solid black 1px;
+    
+}
+/* #box1{
+    border: 2px solid black;
+
+    margin: 10px 10px 0px 10px;
+    position: relative;
+    height: 50%;
+    width: 100;
+    text-align: center;
+    
+}
+#box1 span{
+    margin-top: 20px;
+}
+#box2{
+     border: 2px solid black;
+     margin-left: 9px;
+
+     display: flex;
+     flex-wrap: wrap;
+     position: relative;
+     height: 35%;
+     width: 97%;
+    
+}
+#box21{
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+}
+#box22{
+     position: relative;    
+   width: 20%;
+   height: auto;
+text-align: center
+} */
+
+.carousel-wrapper {
+    position: relative;
+   
+}
+
+.overlay-box {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width:50%;
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    z-index: 10;
+}
+
+/* Title */
+.top-title {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+
+.top-title h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.top-title span {
+    font-style: italic;
+    font-size: 28px;
+}
+
+/* Bottom layout */
+.bottom-section {
+    display: flex;
+    height: 80px;
+     
+}
+
+.bottom-section .left,
+.bottom-section .middle,
+.bottom-section .right {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.left p{
+    margin-top: 15px;
+}
+.bottom-section .left {
+    border-right: 2px solid #333;
+}
+
+.bottom-section .middle {
+    border-right: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./Images/pig.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    
+}
+
+
+.bottom-section .right {
+    background: black;
+}
+
+.bottom-section .right a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Inner border */
+.inner-box {
+    border: 2px solid black;
+   
+}
+
+.enjoy-text{
+    margin: 40px;
+    text-align: center;
+    letter-spacing: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 3container in last */
+.flex-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;  /* 👈 IMPORTANT */
+    width: 300px;
+    height: 450px;
+    border: 1px solid #919090;
+}
+.card button{
+    width: 50%;
+    margin-left: 5%;
+    font-size: small;
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+}
+
+.card:hover .content-box {
+        background-color: #7a7373;
+}
+
+/* Image area */
+.img-box {
+    height: 55%;   /* 👈 control image area */
+    overflow: hidden;
+    
+  background-size: cover;
+  background-position: center;
+}
+#img-1{
+    background-image: url('./Images/cake1.png');
+}
+#img-2{
+    background-image: url('./Images/fish1.png');
+}
+#img-3{
+    background-image: url('./Images/grape1.png');
+}
+.img-box {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* 👈 perfect crop */
+}
+
+/* Content area */
+.content-box {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+
+/* last text */
+.text-last{
+    margin-top: 60px;
+    font-size: 15px;
+    color:  #919090;
+    text-align: center;
+}
+
+
+/* this is cheese.html page styles only */
+.cheese{
+    margin-top: 150px;
+    width: 100%;
+    
+    display: flex;
+
+}
+
+#img-c{
+    margin-left: 10%;
+    position: relative;
+    width: 40%;
+}
+#img-cc{
+    width: 500px;
+    height: 600px;
+}
+#small-img{
+    margin-top: 20px;
+    width: 50px;
+    height: 40px;
+}
+#content-c{
+    margin-right: 10%;
+    margin-top: 40px;
+    width: 40%;
+    position: relative;
+}
+
+.cheese p{
+    font-size: 15px;
+}
+.count-box{
+    height: 30px;
+    width: 70px;
+    border: 1px solid black;
+}
+.count-box2{
+    margin-left: 30px;
+}
+
+.count-box1{
+    margin-left: 8px;
+}
+
+/* .box2{
+    width: 200px;
+    height: 50px;
+    display: flex;
+}
+.box2 a , .box2 h1{
+    position: relative;
+} */
+.b-box{
+    width: 80px;
+    border: 1px solid grey;
+}
+.b-box span, .b-box a{
+    padding-left: 9px;
+}
+
