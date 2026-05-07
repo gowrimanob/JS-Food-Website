@@ -18,7 +18,7 @@
 
 <body>
 
-  
+
   <nav class="navbar navbar-expand-sm bg-white ">
 
     <span id="welcome">Welcome,<span id="userName">Guest</span>! </span>
@@ -29,7 +29,7 @@
           <a class="nav-link" href="#">Home </a>
         </li>
         <li class="nav-item  mx-2">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="./about-page.html">About</a>
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link" href="#">Cheeses</a>
@@ -110,12 +110,10 @@
           </div>
 
           <div class="middle">
-            <!-- <img src="pig.png" alt=""> -->
+
           </div>
 
-          <div class="right">
-            <a href="#">START SHOPPING > </a>
-          </div>
+          <div class="right">START SHOPPING > </div>
         </div>
 
 
@@ -146,7 +144,7 @@
 
         <div class="content-box"><span> SMOKED VIRGINIA BACON </span>
           <H1>__</H1>
-          <span>$6.99</span><br>
+          <span>$12.99</span><br>
 
           <a href="./bacon.html"><button>View Details</button></a>
         </div>
@@ -159,34 +157,30 @@
 
         <div class="content-box"><span> GREEK KALAMATA OLIVES </span>
           <H1>__</H1>
-          <span>$6.99</span><br>
+          <span>$8.99</span><br>
 
-          <button>View Details</button>
+          <a href="./olives.html"><button>View Details</button></a>
 
         </div>
       </div>
 
     </div>
 
-
-
-
-
     <p class="text-last">© 2035 by GOOD TO EAT. Powered and secured by Wix</p>
 
 
 
-   
+
 </body>
 
- <!-- for username fetching -->
-    <script>
-      const username = localStorage.getItem("currentUser");
+<!-- for username fetching -->
+<script>
+  const username = localStorage.getItem("currentUser");
 
-      if (username) {
-        document.getElementById("userName").textContent = username;
-      }
-    </script>
+  if (username) {
+    document.getElementById("userName").textContent = username;
+  }
+</script>
 
 
 </html>

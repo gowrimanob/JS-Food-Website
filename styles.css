@@ -132,16 +132,29 @@ a{
 }
 
 
-.bottom-section .right {
+.right {
     background: black;
+    color: white;
+    white-space: nowrap;
 }
 
-.bottom-section .right a {
+.right:hover{
+    background-color:rgba(255,255,255,0.9);
+    color: black;
+}
+/* @keyframes mymove {
+  50% {opacity: 0;}
+  50% {color: black;}
+} */
+
+
+
+/* .bottom-section .right a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     white-space: nowrap;
-}
+} */
 
 /* Inner border */
 .inner-box {
@@ -325,4 +338,17 @@ a{
 }
 #icons4 span{
     padding: 10px;
+}
+
+/* About page styles  */
+
+.abt-middle{
+     border-right: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./Images/pig.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
 }
